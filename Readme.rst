@@ -1,5 +1,5 @@
 img2txt
--------
+=======
 
 Image to Ascii Text. Dead simple, something useless.
 
@@ -29,8 +29,8 @@ sample usage::
 
 the arguments::
 
-    --size             max length of output
-    --level            size/levle will get the lineheight
+    --size             max length of the result
+    --level            height/levle will get the line-height(here, height means the height of result)
 
 WhyHTML
 -------
