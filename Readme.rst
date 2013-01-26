@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    Usage: imgtxt <imgfile> [--size=<size>] [--level=<level>]
+    Usage: img2txt <imgfile> [--size=<size>] [--level=<level>]
 
 sample usage::
 
@@ -31,6 +31,11 @@ the arguments::
 
     --size             max length of output
     --level            size/levle will get the lineheight
+
+WhyHTML
+-------
+
+Because, the line-height in the css make an important sense to the result's quality.
 
 License
 -------
