@@ -1,0 +1,6 @@
+build
+img2txt.egg-info
+dist
+*.pyc
+*.swp
+*.swo
