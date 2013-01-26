@@ -14,7 +14,8 @@ Install
 
 ::
 
-    [sudo] pip install git+git://github.com/hit9/img2txt.git
+    git clone https://github.com/hit9/img2txt.git
+    python setup.py install
 
 Usage
 -----
