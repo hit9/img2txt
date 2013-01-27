@@ -14,24 +14,22 @@ Install
 
 ::
 
-    git clone https://github.com/hit9/img2txt.git
-    python setup.py install
+    pip install git+git://github.com/hit9/img2txt.git
 
 Usage
 -----
 
 ::
 
-    Usage: img2txt.py <imgfile> [--size=<size>] [--level=<level>]
+    Usage: img2txt.py <imgfile> [--maxLen=<maxLen>]
 
 sample usage::
 
-    img2txt.py me.jpg --size=100 --level=10  > me.html
+    img2txt.py me.jpg --maxLen=100  > me.html
 
 the arguments::
 
-    --size             max length of the result
-    --level            height/levle will get the line-height(here, height means the height of result)
+    --maxLen             max length of the result,default:100
 
 WhyHTML
 -------
