@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Usage: img2txt.py <imgfile> [--size=<size>] [--level=<level>]
+Usage: img2txt.py <imgfile> [--maxLen=<maxLen>]
 
 """
 
@@ -11,19 +11,12 @@ dct = docopt(__doc__)
 
 imgname = dct['<imgfile>']
 
-MaxLen = dct['--size']
+maxLen = dct['--maxLen']
 
 try:
-    MaxLen = float(MaxLen)
+    maxLen = float(maxLen)
 except:
-    MaxLen = 100.0   # default maxlen: 100px
-
-level = dct['--level']
-
-try:
-    level = float(level)
-except:
-    level = 10
+    maxLen = 100.0   # default maxlen: 100px
 
 
 import Image
@@ -33,13 +26,11 @@ try:
 except IOError:
     exit("File not found: " + imgname)
 
-# resize to: the max of the img is 100px
-
-maxLen = max(img.size)
+# resize to: the max of the img is maxLen
 
 width, height = img.size
 
-rate = MaxLen / maxLen
+rate = maxLen / max(width, height)
 
 width = int(rate * width)  # cast to int
 
@@ -51,16 +42,16 @@ img = img.resize((width, height))
 # ranges from 0 to 255
 img = img.convert('L')
 
-# get pix
-pix = img.load()
+# get pixels
+pixel = img.load()
 
-color = "MNHQ$OC?7>!:-;."
+color = "MNHQ$OC?7>!:-;. "
 
 string = ""
 
 for h in xrange(height):  # first go through the height,  otherwise will roate
     for w in xrange(width):
-        string += color[int(pix[w, h] * 14 / 255)]
+        string += color[int(pixel[w, h] * 15 / 255)]
     string += "\n"
 
 # wrappe with html
@@ -70,7 +61,7 @@ style = """
     <head>
         <style>
         .imgtxt{
-            line-height:""" + str(int(height / level)) + """px;
+            line-height:""" + str(rate) + """;
         }
     </style>
     </head>
