@@ -22,11 +22,11 @@ Usage
 
 ::
 
-    Usage: img2txt <imgfile> [--size=<size>] [--level=<level>]
+    Usage: img2txt.py <imgfile> [--size=<size>] [--level=<level>]
 
 sample usage::
 
-    img2txt me.jpg --size=100 --level=10  > me.html
+    img2txt.py me.jpg --size=100 --level=10  > me.html
 
 the arguments::
 
@@ -36,7 +36,7 @@ the arguments::
 WhyHTML
 -------
 
-Because, the line-height in the css make an important sense to the result's quality.
+Because it looks good in html with a right line-height
 
 License
 -------
