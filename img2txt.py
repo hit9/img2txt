@@ -45,13 +45,14 @@ img = img.convert('L')
 # get pixels
 pixel = img.load()
 
+# grayscale
 color = "MNHQ$OC?7>!:-;. "
 
 string = ""
 
 for h in xrange(height):  # first go through the height,  otherwise will roate
     for w in xrange(width):
-        string += color[int(pixel[w, h] * 15 / 255)]
+        string += color[int(pixel[w, h] / 256.0 * 16)]
     string += "\n"
 
 # wrappe with html
@@ -61,7 +62,8 @@ style = """
     <head>
         <style>
         .imgtxt{
-            line-height:""" + str(rate) + """;
+            font-size:7px;
+            line-height:7px;
         }
     </style>
     </head>
