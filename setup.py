@@ -9,5 +9,5 @@ setup(
     license="BSD", 
     url="https://github.com/hit9/img2txt",
     install_requires = ['docopt'],
-    scripts=['img2txt']
+    scripts=['img2txt.py']
 )

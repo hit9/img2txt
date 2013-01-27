@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Usage: imgtxt <imgfile> [--size=<size>] [--level=<level>]
