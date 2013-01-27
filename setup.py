@@ -8,6 +8,6 @@ setup(
     description=("Image to Ascii Text."),
     license="BSD", 
     url="https://github.com/hit9/img2txt",
-    install_requires = ['docopt'],
+    install_requires = ['docopt', 'PIL'],
     scripts=['img2txt.py']
 )
