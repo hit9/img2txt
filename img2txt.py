@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Usage: imgtxt.py <imgfile> [--size=<size>] [--level=<level>]
+Usage: img2txt.py <imgfile> [--size=<size>] [--level=<level>]
 
 """
 
