@@ -3,6 +3,8 @@ img2txt
 
 Image to Ascii Text. Dead simple, something useless.
 
+Online Demo: http://hit9.org/img2txt.html
+
 Sample:
 
 .. image:: https://github.com/hit9/img2txt/raw/master/sample/test.jpg
