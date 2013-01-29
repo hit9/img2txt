@@ -68,6 +68,7 @@ style = """
     <head>
         <style>
         .imgtxt{
+            -webkit-text-size-adjust:none;
             font-size:7px;
             line-height:7px;
         }
