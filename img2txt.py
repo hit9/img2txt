@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Usage: img2txt.py <imgfile> [--maxLen=<maxLen>]
+Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--color]
 
 """
 
@@ -12,6 +12,8 @@ dct = docopt(__doc__)
 imgname = dct['<imgfile>']
 
 maxLen = dct['--maxLen']
+
+clr = dct['--color']
 
 try:
     maxLen = float(maxLen)
@@ -38,9 +40,7 @@ height = int(rate * height)
 
 img = img.resize((width, height))
 
-# convert to L model,  therefore: pix[x, y] will get an average number
-# ranges from 0 to 255
-img = img.convert('L')
+# img = img.convert('L')
 
 # get pixels
 pixel = img.load()
@@ -52,7 +52,13 @@ string = ""
 
 for h in xrange(height):  # first go through the height,  otherwise will roate
     for w in xrange(width):
-        string += color[int(pixel[w, h] / 256.0 * 16)]
+        rgb = pixel[w, h]
+        char = color[int(sum(rgb) / 3.0 / 256.0 * 16)]
+        if clr:
+            string += "<span style=\"color:rgb" + str(rgb) + \
+                ";\">" + char + "</span>"
+        else:
+            string += char
     string += "\n"
 
 # wrappe with html
