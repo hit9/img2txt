@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--color]
+Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--fontSize=<fontSize>] [--color]
 
 """
 
@@ -15,10 +15,17 @@ maxLen = dct['--maxLen']
 
 clr = dct['--color']
 
+fontSize = dct['--fontSize']
+
 try:
     maxLen = float(maxLen)
 except:
     maxLen = 100.0   # default maxlen: 100px
+
+try:
+    fontSize = int(fontSize)
+except:
+    fontSize = 7
 
 
 import Image
@@ -69,8 +76,8 @@ style = """
         <style>
         .imgtxt{
             -webkit-text-size-adjust:none;
-            font-size:7px;
-            line-height:7px;
+            font-size:""" + str(fontSize) + """px;
+            line-height:1;
         }
     </style>
     </head>
