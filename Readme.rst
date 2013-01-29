@@ -3,7 +3,7 @@ img2txt
 
 Image to Ascii Text. Dead simple, something useless.
 
-Online Demo: http://hit9.org/img2txt.html
+**Online Demo**: http://hit9.org/img2txt.html
 
 Sample:
 
@@ -23,20 +23,21 @@ Usage
 
 ::
 
-    Usage: img2txt.py <imgfile> [--maxLen=<maxLen>]
+    Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--color]
 
 sample usage::
 
-    img2txt.py me.jpg --maxLen=100  > me.html
+    img2txt.py me.jpg --maxLen=100  --color > me.html
 
 the arguments::
 
     --maxLen             max length of the result,default:100
+    --color              if in color
 
 WhyHTML
 -------
 
-Because it looks good in html with a right line-height
+Because it looks good in html.
 
 License
 -------
