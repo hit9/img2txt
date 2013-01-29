@@ -23,16 +23,31 @@ Usage
 
 ::
 
-    Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--color]
+    Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--fontSize=<fontSize>] [--color]
 
 sample usage::
 
-    img2txt.py me.jpg --maxLen=100  --color > me.html
+    img2txt.py me.jpg --maxLen=100  --fontSize=3 --color > me.html
 
-the arguments::
+the optional arguments::
 
     --maxLen             max length of the result,default:100
-    --color              if in color
+    --color              if in color, default:False
+    --fontSize           the font-size(px) of text in the html,default:7
+
+Warning
+-------
+
+Use browsers to look colored html may cause a big memory usage.
+
+Hack!
+-----
+
+For instance , you have some pic: foo.jpg, and its size: axb, suppose a>b.
+
+now, ``img2txt.py foo.jpg --maxLen=a --fontSize=1 --color > foo.html``
+
+see foo.html in chrome or firefox, It looks like a picture!
 
 WhyHTML
 -------
