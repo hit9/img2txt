@@ -3,29 +3,23 @@ img2txt
 
 Image to Ascii Text. Dead simple, something useless.
 
-Sample: demo_
-
-.. _demo: http://hit9.org/img2txt.html
+DEMO: http://hit9.org/img2txt.html
     
 Install
 -------
-
-::
 
     pip install git+git://github.com/hit9/img2txt.git
 
 Usage
 -----
 
-::
-
     Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--fontSize=<fontSize>] [--color]
 
-sample usage::
+sample usage:
 
     img2txt.py me.jpg --maxLen=100  --fontSize=3 --color > me.html
 
-the optional arguments::
+the optional arguments:
 
     --maxLen             max length of the result,default:100
     --color              if in color, default:False
