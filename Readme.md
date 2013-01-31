@@ -21,7 +21,7 @@ The picture:foo.jpg (230x354)
 Install
 -------
 
-    pip install git+git://github.com/hit9/img2txt.git
+    pip install git+git://github.com/hit9/img2txt.git@master
 
 Usage
 -----
