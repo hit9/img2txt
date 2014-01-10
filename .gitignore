@@ -6,3 +6,5 @@ dist
 *.swo
 *.jpg
 .ropeproject
+venv
+test
