@@ -3,10 +3,12 @@ img2txt
 
 Image to Ascii Text. Dead simple, something useless.
 
+**Just a toy**
+
 DEMOs
 -----
 
-The picture:foo.jpg (230x354)
+The following picture: foo.jpg (230x354)
 
 ![](http://hit9.org/img2txt/foo.jpg)
 
@@ -18,10 +20,14 @@ The picture:foo.jpg (230x354)
 
 1. `img2txt.py foo.jpg --color --fontSize=1 --maxLen=354 > 4.html` : [demo](http://hit9.org/img2txt/4.html)
     
-Install
--------
+Installation
+------------
 
-    pip install git+git://github.com/hit9/img2txt.git@master
+```bash
+$ virtualenv venv
+$ . venv/bin/activate
+(venv)$ pip install git+git://github.com/hit9/img2txt.git@master
+```
 
 Usage
 -----
