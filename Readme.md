@@ -10,15 +10,15 @@ DEMOs
 
 The following picture: foo.jpg (230x354)
 
-![](http://hit9.org/img2txt/foo.jpg)
+![](http://hit9.github.io/img2txt/foo.jpg)
 
-1. `img2txt.py foo.jpg > 1.html` : [demo](http://hit9.org/img2txt/1.html)
+1. `img2txt.py foo.jpg > 1.html` : [demo](http://hit9.github.io/img2txt/1.html)
 
-1. `img2txt.py foo.jpg --color > 2.html` : [demo](http://hit9.org/img2txt/2.html)
+1. `img2txt.py foo.jpg --color > 2.html` : [demo](http://hit9.github.io/img2txt/2.html)
 
-1. `img2txt.py foo.jpg --color --fontSize=1 > 3.html`  : [demo](http://hit9.org/img2txt/3.html)
+1. `img2txt.py foo.jpg --color --fontSize=1 > 3.html`  : [demo](http://hit9.github.io/img2txt/3.html)
 
-1. `img2txt.py foo.jpg --color --fontSize=1 --maxLen=354 > 4.html` : [demo](http://hit9.org/img2txt/4.html)
+1. `img2txt.py foo.jpg --color --fontSize=1 --maxLen=354 > 4.html` : [demo](http://hit9.github.io/img2txt/4.html)
     
 Installation
 ------------
