@@ -2,6 +2,7 @@ img2txt
 =======
 
 Image to Ascii Text. Dead simple, something useless.
+Can output to HTML or ANSI
 
 **Just a toy**
 
@@ -32,7 +33,7 @@ $ . venv/bin/activate
 Usage
 -----
 
-    Usage: img2txt.py <imgfile> [--maxLen=<maxLen>] [--fontSize=<fontSize>] [--color]
+    Usage: img2txt.py <imgfile> [--maxLen=<n>] [--fontSize=<n>] [--color] [--ansi] [--bgcolor=<#RRGGBB>] [--antialias]
 
 sample usage:
 
@@ -40,9 +41,12 @@ sample usage:
 
 the optional arguments:
 
-    --maxLen             max length of the result,default:100
-    --color              if in color, default:False
-    --fontSize           the font-size(px) of text in the html,default:7
+    --ansi       output an ANSI rendering of the image
+    --color      output a colored HTML rendering of the image.  
+    --antialias  causes any resizing of the image to use antialiasing
+    --fontSize=<n>   sets font size (in pixels) when outputting HTML. Default is 7
+    --bgcolor=<#RRGGBB>    if specified, is blended with transparent pixels to produce the output. In ansi case, if no bgcolor set, a fully transparent pixel is not drawn at all, partially transparent pixels drawn as if opaque 
+    --maxLen=<n>     resize image so that larger of width or height matches maxLen. Default is 100px       
 
 Warning
 -------
