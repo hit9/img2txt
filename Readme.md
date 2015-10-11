@@ -44,6 +44,11 @@ Options:
                         transparent pixels drawn as if opaque
 ```
 
+Thanks
+------
+
+Thanks to @EdRowe for pull request https://github.com/hit9/img2txt/pull/4 (ansi support).
+
 License
 -------
 
