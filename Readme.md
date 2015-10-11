@@ -6,8 +6,6 @@ Image to Ascii Text, can output to html or ansi terminal.
 Example
 -------
 
-The following picture: foo.jpg (230x354)
-
 ![](example/jiaozhu.jpg)
 
 1. `img2txt.py jiaozhu.jpg > without-color.html` : [demo](http://hit9.github.io/img2txt/example/without-color.html)
