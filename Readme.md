@@ -1,13 +1,10 @@
 img2txt
 =======
 
-Image to Ascii Text. Dead simple, something useless.
-Can output to HTML or ANSI
+Image to Ascii Text, can output to html or ansi terminal.
 
-**Just a toy**
-
-DEMOs
------
+HTML Demo
+---------
 
 The following picture: foo.jpg (230x354)
 
@@ -20,7 +17,7 @@ The following picture: foo.jpg (230x354)
 1. `img2txt.py foo.jpg --color --fontSize=1 > 3.html`  : [demo](http://hit9.github.io/img2txt/3.html)
 
 1. `img2txt.py foo.jpg --color --fontSize=1 --maxLen=354 > 4.html` : [demo](http://hit9.github.io/img2txt/4.html)
-    
+
 Installation
 ------------
 
@@ -42,11 +39,11 @@ sample usage:
 the optional arguments:
 
     --ansi       output an ANSI rendering of the image
-    --color      output a colored HTML rendering of the image.  
+    --color      output a colored HTML rendering of the image.
     --antialias  causes any resizing of the image to use antialiasing
     --fontSize=<n>   sets font size (in pixels) when outputting HTML. Default is 7
-    --bgcolor=<#RRGGBB>    if specified, is blended with transparent pixels to produce the output. In ansi case, if no bgcolor set, a fully transparent pixel is not drawn at all, partially transparent pixels drawn as if opaque 
-    --maxLen=<n>     resize image so that larger of width or height matches maxLen. Default is 100px       
+    --bgcolor=<#RRGGBB>    if specified, is blended with transparent pixels to produce the output. In ansi case, if no bgcolor set, a fully transparent pixel is not drawn at all, partially transparent pixels drawn as if opaque
+    --maxLen=<n>     resize image so that larger of width or height matches maxLen. Default is 100px
 
 Warning
 -------
