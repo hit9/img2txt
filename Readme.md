@@ -3,6 +3,8 @@ img2txt
 
 Image to Ascii Text, can output to html or ansi terminal.
 
+See also [gif2txt](https://github.com/hit9/gif2txt) for animated version.
+
 Example
 -------
 
