@@ -20,7 +20,7 @@ Installation
 ```bash
 $ virtualenv venv
 $ . venv/bin/activate
-(venv)$ pip install git+git://github.com/hit9/img2txt.git@master
+(venv)$ pip install img2txt.py
 ```
 
 Usage

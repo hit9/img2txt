@@ -7,7 +7,7 @@ setup(
     author_email="hit9@icloud.com",
     description="Image to Ascii Text, can output to html or ansi terminal.",
     license="BSD",
-    url="http://hit9.github.io/img2txt",
+    url="https://github.com/hit9/img2txt",
     install_requires=['docopt', 'Pillow'],
     scripts=['img2txt.py']
 )
