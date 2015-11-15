@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="img2txt",
+    name="img2txt.py",
     version="2.0",
     author="hit9",
     author_email="hit9@icloud.com",
