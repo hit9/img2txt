@@ -4,7 +4,6 @@ dist
 *.pyc
 *.swp
 *.swo
-*.jpg
 .ropeproject
 venv
 test
