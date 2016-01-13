@@ -11,8 +11,9 @@ Example
 ![](example/jiaozhu.jpg)
 
 1. `img2txt.py jiaozhu.jpg > without-color.html` : [demo](http://hit9.github.io/img2txt/example/without-color.html)
-2. `img2txt.py jiaozhu.jpg --color > with-color.html`: [demo](http://hit9.github.io/img2txt/example/with-color.html)
-3. `img2txt.py jiaozhu.jpg --ansi`: [demo](http://hit9.github.io/img2txt/example/ansi-terminal.png)
+2. `img2txt.py jiaozhu.jpg --dither > without-color-dither.html` : [demo](http://hit9.github.io/img2txt/example/without-color-dither.html)
+3. `img2txt.py jiaozhu.jpg --color > with-color.html`: [demo](http://hit9.github.io/img2txt/example/with-color.html)
+4. `img2txt.py jiaozhu.jpg --ansi`: [demo](http://hit9.github.io/img2txt/example/ansi-terminal.png)
 
 Installation
 ------------
@@ -51,10 +52,11 @@ Options:
                         character is 2x its width, you might want to try 0.5 here
 ```
 
-Thanks
-------
+Authors
+-------
 
-Thanks to @EdRowe for pull request https://github.com/hit9/img2txt/pull/4 (ansi support).
+- @EdRowe (#4, #7)
+- @hit9
 
 License
 -------
