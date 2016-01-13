@@ -28,7 +28,7 @@ Usage
 
 ```
 Usage:
-  img2txt.py <imgfile> [--maxLen=<n>] [--fontSize=<n>] [--color] [--ansi] [--bgcolor=<#RRGGBB>] [--antialias]
+  img2txt.py <imgfile> [--maxLen=<n>] [--fontSize=<n>] [--color] [--ansi] [--bgcolor=<#RRGGBB>] [--targetAspect=<n>] [--antialias] [--dither]
   img2txt.py (-h | --help)
 
 Options:
@@ -36,6 +36,8 @@ Options:
   --ansi                output an ANSI rendering of the image
   --color               output a colored HTML rendering of the image.
   --antialias           causes any resizing of the image to use antialiasing
+  --dither              dither the colors to web palette. Useful when converting
+                        images to ANSI (which has a limited color palette)
   --fontSize=<n>        sets font size (in pixels) when outputting HTML,
                         default: 7
   --maxLen=<n>          resize image so that larger of width or height matches
@@ -44,6 +46,9 @@ Options:
                         produce the output. In ansi case, if no bgcolor set, a
                         fully transparent pixel is not drawn at all, partially
                         transparent pixels drawn as if opaque
+  --targetAspect=<n>    resize image to this ratio of width to height. Default is
+                        1.0 (no resize). For a typical terminal where height of a
+                        character is 2x its width, you might want to try 0.5 here
 ```
 
 Thanks
