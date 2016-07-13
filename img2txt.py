@@ -79,8 +79,8 @@ def generate_grayscale_for_image(pixels, width, height, bgcolor):
 
     string = ""
     # first go through the height,  otherwise will rotate
-    for h in xrange(height):
-        for w in xrange(width):
+    for h in range(height):
+        for w in range(width):
 
             rgba = pixels[w, h]
 
