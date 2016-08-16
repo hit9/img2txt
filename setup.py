@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="img2txt.py",
-    version="2.2",
+    version="2.3",
     author="hit9",
     author_email="hit9@icloud.com",
     description="Image to Ascii Text, can output to html or ansi terminal.",
