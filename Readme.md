@@ -56,6 +56,8 @@ Authors
 -------
 
 - @EdRowe (#4, #7)
+- @shakib609 (#10)
+- @mattaudesse (#11)
 - @hit9
 
 License
