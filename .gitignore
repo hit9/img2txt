@@ -1,5 +1,5 @@
 build
-img2txt.egg-info
+img2txt.py.egg-info
 dist
 *.pyc
 *.swp

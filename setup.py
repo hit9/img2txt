@@ -9,5 +9,6 @@ setup(
     license="BSD",
     url="https://github.com/hit9/img2txt",
     install_requires=['docopt', 'Pillow'],
-    scripts=['img2txt.py']
+    scripts=['img2txt.py'],
+    py_modules=['ansi', 'graphics_util'],
 )
