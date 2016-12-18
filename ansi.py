@@ -227,8 +227,8 @@ def generate_ANSI_from_pixels(pixels, width, height, bgcolor_rgba, current_ansi_
         cursor_x = 0
         cursor_y = 0
 
-    for h in xrange(height):  
-        for w in xrange(width):
+    for h in range(height):  
+        for w in range(width):
 
             draw_char, rgba = get_pixel_func(pixels, w, h)
 
