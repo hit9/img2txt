@@ -203,8 +203,8 @@ def dither_image_to_web_palette(img, bgcolor):
         rgb_pixels = rgb_img.load()
         width, height = img.size
 
-        for h in xrange(height):    # set transparent pixels to black
-            for w in xrange(width):
+        for h in range(height):    # set transparent pixels to black
+            for w in range(width):
                 if (orig_pixels[w, h])[3] != 255:    
                     rgb_pixels[w, h] = (0, 0, 0)   # bashing in a new value changes it!
 
@@ -212,8 +212,8 @@ def dither_image_to_web_palette(img, bgcolor):
 
         dithered_pixels = dithered_img.load() # must do it again
         
-        for h in xrange(height):    # restore original RGBA for transparent pixels
-            for w in xrange(width):
+        for h in range(height):    # restore original RGBA for transparent pixels
+            for w in range(width):
                 if (orig_pixels[w, h])[3] != 255:    
                     dithered_pixels[w, h] = orig_pixels[w, h]   # bashing in a new value changes it!
 
